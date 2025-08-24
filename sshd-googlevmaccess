@@ -1,0 +1,4 @@
+vi /etc/ssh/sshd_config
+ ###set password auth yes
+sytemctl sshd restart
+sudo service sshd restart
