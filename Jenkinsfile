@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage ('Main') {  
+        stage ('Urgent-Fix') {  
             steps {
-                echo '*** Main Branch***' 
+                echo '*** Urgent Branch***' 
             }
         }   
 }
