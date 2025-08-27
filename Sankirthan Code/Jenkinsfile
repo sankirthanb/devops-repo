@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    tools{
+        maven 'Maven_Path'
+    }
+    stages{
+        stage ('Maven') {  
+            steps {
+                echo '*** entering build block***'
+                sh 'mvn --version'   
+            }
+        }    
+        stage ('Maven_custom_jdk') {
+             tools{
+                 jdk 'JDK_path'
+            }
+            steps {
+                echo '*** entering build block***'
+                sh 'mvn --version'   
+            }
+       }
+}
+    }
