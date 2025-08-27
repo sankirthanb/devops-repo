@@ -2,3 +2,4 @@ vi /etc/ssh/sshd_config
  ###set password auth yes
 sytemctl restart sshd
 sudo service sshd restart
+##Changed to Test Jenkins
